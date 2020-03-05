@@ -101,78 +101,81 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageLayout">
 
-            <CheckBox
-                android:id="@+id/checkHat"
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/checkHat"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hat" />
+
+                <CheckBox
+                    android:id="@+id/checkEyes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eyes" />
+
+                <CheckBox
+                    android:id="@+id/checkEyebrows"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eyebrows" />
+
+                <CheckBox
+                    android:id="@+id/checkGlasses"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Glasses" />
+
+                <CheckBox
+                    android:id="@+id/checkArms"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Arms" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Hat" />
+                android:layout_toRightOf="@+id/radioGroup1">
 
-            <CheckBox
-                android:id="@+id/checkEyes"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkHat"
-                android:text="Eyes" />
+                <CheckBox
+                    android:id="@+id/checkNose"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nose" />
 
-            <CheckBox
-                android:id="@+id/checkEyebrows"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkEyes"
-                android:text="Eyebrows" />
+                <CheckBox
+                    android:id="@+id/checkMustache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mustache" />
 
-            <CheckBox
-                android:id="@+id/checkGlasses"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkEyebrows"
-                android:text="Glasses" />
+                <CheckBox
+                    android:id="@+id/checkMouth"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mouth" />
 
-            <CheckBox
-                android:id="@+id/checkArms"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkGlasses"
-                android:text="Arms" />
+                <CheckBox
+                    android:id="@+id/checkEars"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ears" />
 
-            <CheckBox
-                android:id="@+id/checkNose"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/checkHat"
-                android:text="Nose" />
+                <CheckBox
+                    android:id="@+id/checkShoes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shoes" />
 
-            <CheckBox
-                android:id="@+id/checkMustache"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/checkNose"
-                android:layout_toRightOf="@id/checkEyes"
-                android:text="Mustache" />
+            </RadioGroup>
 
-            <CheckBox
-                android:id="@+id/checkMouth"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/checkMustache"
-                android:layout_toRightOf="@id/checkEyebrows"
-                android:text="Mouth" />
-
-            <CheckBox
-                android:id="@+id/checkEars"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/checkGlasses"
-                android:layout_below="@id/checkMouth"
-                android:text="Ears" />
-
-            <CheckBox
-                android:id="@+id/checkShoes"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/checkEars"
-                android:layout_toRightOf="@id/checkArms"
-                android:text="Shoes" />
 
         </RelativeLayout>
 
